@@ -49,11 +49,77 @@ The **3D-Pathfinding** project is organized to separate core Unity elements, ass
 - **ProjectSettings/** – Stores Unity project configuration files.
 - **Packages/** – Contains Unity package dependencies and manifests.
 
-## How to Use
+Here is a **clean and professional “How to Run” section** you can paste directly into your GitHub README.
+It includes **all required Unity steps**, including the **Active Input Handling = Both** setting.
 
-1. Open the project in Unity (3D Core template recommended)
-2. Press **Play**
-3. Click tiles to add/remove obstacles
-4. Press **D** or **A** to start the corresponding pathfinding algorithm
-5. Watch the robot navigate the computed path
-6. Press **C** to reset the path
+
+## How to Run the Project
+
+Follow these steps to open and run the **3D Factory Pathfinding** project on your own machine.
+
+
+ **1. Install Requirements**
+
+Before starting, make sure you have:
+
+* **Unity Hub** installed
+* **Unity 2022.3 LTS (or newer)**
+* **3D Core Template** available
+* Internet connection for first-time TextMeshPro import (Unity will prompt automatically)
+
+
+**2. Download or Clone the Repository**
+
+*Option A — Clone via Git*
+
+```bash
+git clone https://github.com/Felci278/3D-Pathfinding.git
+```
+
+ *Option B — Download ZIP*
+
+* Click **Code → Download ZIP**
+* Extract it to a folder of your choice
+
+
+ **3. Open the Project in Unity**
+
+1. Open **Unity Hub**
+2. Click **Add**
+3. Select the project folder
+4. Make sure Unity opens it with **2022.3 LTS or later**
+
+The project will load into the Unity Editor.
+
+
+**4. IMPORTANT: Change Input Settings**
+
+This project uses Unity’s **Old Input System**, so you MUST enable either old or both input handlers.
+
+ *Do this step before pressing Play:*
+
+**Go to:**
+`Edit → Project Settings → Player`
+**Under:** *Other Settings*
+**Find:** *Active Input Handling* under other settings section
+**Set it to:** **"Both"**
+
+This ensures the Input System Actions work correctly (D, A, C keys and click interactions).
+
+
+**5. Enter Play Mode**
+
+Press the **Play** button in the Unity Editor. You will now the see the grid and panel instructions for running the game.
+
+
+**6. Optional — Modify Prefabs or Scripts**
+
+If you want to customize the project:
+
+* Floor tiles → `Assets/PreFabs/`
+* Materials → `Assets/Materials/`
+* Robot logic → `RobotController.cs`
+* Pathfinding algorithms → `Pathfinding3D.cs`
+* Grid generation → `GridManager3D.cs`
+
+
